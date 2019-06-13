@@ -11,12 +11,25 @@
     <!-- Define your beans here -->
     
     <!-- define the dependency -->
-        
- 	<bean id="myCoach"
- 		class="com.luv2code.springdemo.TrackCoach">	 		
+     
+     
+ 	<bean id="myFortuneService"
+		class="com.luv2code.springdemo.HappyFourtuneService">
+	</bean>
+
+	<bean id="myCoach"
+ 		class="com.luv2code.springdemo.BaseballCoach">
+			<constructor-arg ref="myFortuneService" /> 	 		
  	</bean>
 
-    <!--
+	
+	<!--
+ 	<bean id="myCoach"
+ 		class="com.luv2code.springdemo.TennisCoach">
+ 	</bean>
+	-->
+    
+	<!--
     <bean id="myCoach"
         class="com.luv2code.springdemo.BaseballCoach">         
     </bean>

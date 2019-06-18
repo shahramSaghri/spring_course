@@ -4,7 +4,7 @@ public class TrackCoach implements Coach {
 
 	private FortuneService fortuneService;
 
-	//This is a non-arg constructor
+	//This is a no-arg constructor
 	public TrackCoach() {
 		
 	}
@@ -28,8 +28,17 @@ public class TrackCoach implements Coach {
 		 * implements FortuneService interface.
 		 * So this is in fact a custom implementation;
 		 */ 
-		
 		return "Just Do it: " + fortuneService.getFortune();
+	}
+	
+	//Add an init method
+	public void doMyStartupStuff() {
+		System.out.println("TracCoach: inside method doMyStartupStuff");
+	}
+	
+	//add a destroy method
+	public void doMyCleanupStuffYoYo() {
+		System.out.println("TrackCoach: inside method doMyCleanupStuffYoYo");
 	}
 
 }

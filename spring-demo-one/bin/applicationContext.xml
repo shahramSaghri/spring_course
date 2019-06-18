@@ -8,8 +8,8 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- The following is how we load properties from 
-		properties file as the value of the object's property.
-		the below location property of the following tag, we determine
+		properties file as the value of the beans/object's property.
+		With the location property of the following tag, we determine
 		the location of the properties file location. following tag in fact
 		loads the properties file into the memory-->
 	<context:property-placeholder location="classpath:sport.properties" />
